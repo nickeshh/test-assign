@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<nav>
+		<div class="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-top logo">
+						<h1>Puppy<span>Gram</span></h1>
+						<img src="image/main-logo.png" alt="main logo">
+					</div>
+					<div class=" col-top search">
+						<div class="search-bar">
+							<form action="" method="get">
+								<input type="text" placeholder="search">
+							</form>
+						</div>
+					</div>
+					<div class="col-top info">
+						<button class="upload-btn" id="upload" onclick="uploadImg()">Upload</button>
+						<i class="fas fa-bell bell-icon"></i>
+						<span>MB</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!--  for upload form section  -->
+	<div class="upload-model">
+		<div class="image-upload">
+			<h3>Upload your dog photo </h3>
+			<form action="" method="post">
+
+				<div class="row">
+					<span>Upload a photo</span>
+					<div class="row preview-box">
+						<label for="inpfile" class="select-btn">Select Photo</label>
+						<input type="file" name="inpfile" id="inpfile" accept="image/*" required>
+						<div class="image-preview" id="imagePreview">
+							<img src="" alt="Image" class="image-preview__image">
+							<p class="image-preview__text">Preview</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<label for="title">Title</label>
+					<input type="text" id="title" placeholder="What breed is your dog" required>
+				</div>
+				<div class="row">
+					<label for="desc">Description (Optional)</label>
+					<textarea id="desc" placeholder="(optional)" rows="4"></textarea>
+				</div>
+				<div class="row">
+					<label for="num">Secret User ID</label>
+					<input type="number" id="num" placeholder="######" maxlength="6" required>
+				</div>
+				<div class="row">
+					<button onclick="myFunction()">Submit</button>
+				</div>
+			</form>
+			<span class="close" id="close-form">+</span>
+		</div>
+	</div>
+
+
+
+	<section class="image-gallery" id="gallery">
+		<div class="container">
+			<div class="title">
+				<h2>Trending Now</h2>
+			</div>
+			<div class="gallery">
+				<div class="img-holder">
+					<img src="image/mastiff.png" alt=" mastiff" data-original="mastiff.png" data-title="mastiff"
+						data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/alaskan-malamute.jpg" alt="alaskan malamute" data-original="alaskan-malamute.jpg"
+						data-title="alaskan malamute" data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/American_Bully.jpg" alt="American Bully" data-original="American_Bully.jpg"
+						data-title="American Bully" data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/Chihuahua.png" alt="Chihuahua" data-original="Chihuahua.png" data-title="Chihuahua"
+						data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/Husky.jpg" alt="Husky.jpg" data-original="Husky.jpg" data-title="Husky.jpg"
+						data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/Irish_Setter.jpg" alt="Irish Setter" data-original="Irish_Setter.jpg"
+						data-title="Irish Setter" data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/Labrador.png" alt="Labrador " data-original="Labrador.png" data-title="Labrador"
+						data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/rottweiler-puppy.jpg" alt="rottweiler puppy" data-original="rottweiler-puppy.jpg"
+						data-title="rottweiler puppy" data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/2-sheltie-puppies-jane-burton.jpg" alt="sheltie puppies jane burton "
+						data-original="2-sheltie-puppies-jane-burton.jpg" data-title="sheltie jane "
+						data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/Dalmatian.jpg" alt="Dalmatian" data-original="Dalmatian.jpg" data-title="Dalmatian"
+						data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/dachshund-puppies.jpg" alt="dachshund-puppies" data-original="dachshund-puppies.jpg"
+						data-title="dachshund" data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/jack-russell.jpg" alt="jack russell" data-original="jack-russell.jpg"
+						data-title="jack russell" data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/Bulldog.jpg" alt="Bulldog" data-original="Bulldog.jpg" data-title="Bulldog"
+						data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/Siberian-Husky.jpg" alt="Siberian Husky" data-original="Siberian-Husky.jpg"
+						data-title="Siberian Husky" data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+				<div class="img-holder">
+					<img src="image/pug-breed.jpg" alt="pug breed " data-original="pug-breed.jpg" data-title="pug"
+						data-content="Description here should not be lorem ipsum">
+					<span class="close">+</span>
+				</div>
+			</div>
+			
+			<div class="model">
+				<div class="model-box">
+					<img src="image/purple-and-yellow-flowers.jpg" alt="" class="full-img">
+					<div class="content row">
+						<div class="left-side">
+							<h3 class="title">Title Here</h3>
+							<p class="caption">Lorem ipsum dolor sit amet, consectetur</p>
+						</div>
+						<div class="right-side">
+							<img src="image/sub-logo.png" alt="">
+							<span>1,234 <span>Paw-fives</span></span>
+						</div>
+					</div>
+					<span class="close" id="close-image">+</span>
+				</div>
+			</div>
+
+			<button class="load-btn">+ Load More</button>
+			<div class="select-opt">
+				<label for="dogs">Showing</label>
+				<select id="dogs" name="dogs">
+					<option value="trending">Trending</option>
+					<option value="featured">Featured</option>
+					<option value="newly-born">Newly Born</option>
+					<option value="adopt">Adopt</option>
+				</select>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="footer-nav">
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+			<div class="footer-info">
+				<h3>puppygram</h3>
+				<img src="image/sub-logo.png" alt="sub-logo">
+				<span>Copyright 2020 - Puppygram Inc.</span>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="custom.js"></script>
+</body>
+
+</html>
